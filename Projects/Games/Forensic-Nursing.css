@@ -1,5 +1,5 @@
 .u-section-1 .u-sheet-1 {
-  min-height: 500px;
+  min-height: 200px;
 }
 
 .u-section-1 .u-text-1 {
@@ -10,36 +10,20 @@
   font-family: Roboto, sans-serif;
 }
 
-.u-section-1 .u-video-1 {
-  width: 570px;
-  height: 321px;
-  margin: 30px auto 0;
-}
-
 .u-section-1 .u-text-2 {
   width: 540px;
-  margin: 30px auto 60px;
+  margin: 50px auto 30px;
 }
 
 @media (max-width: 767px) {
   .u-section-1 .u-sheet-1 {
     min-height: 483px;
   }
-
-  .u-section-1 .u-video-1 {
-    width: 540px;
-    height: 304px;
-  }
 }
 
 @media (max-width: 575px) {
   .u-section-1 .u-sheet-1 {
     min-height: 370px;
-  }
-
-  .u-section-1 .u-video-1 {
-    width: 340px;
-    height: 191px;
   }
 
   .u-section-1 .u-text-2 {
