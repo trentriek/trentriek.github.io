@@ -25,7 +25,7 @@
 
 .u-section-2 .u-text-1 {
   width: 740px;
-  margin: 30px auto 0;
+  margin: 30px auto 60px;
 }
 
 .u-section-2 .u-list-1 {
@@ -46,7 +46,8 @@
 }
 
 .u-section-2 .u-image-1 {
-  background-image: url("images/koolshadow.jpg");
+  background-image: url("images/SIsoRUR499.gif");
+  background-position: 50% 50%;
 }
 
 .u-section-2 .u-container-layout-1 {
@@ -68,7 +69,8 @@
 }
 
 .u-section-2 .u-image-2 {
-  background-image: url("images/koolshadow.jpg");
+  background-image: url("images/maya_IxrCjPoLjB.png");
+  background-position: 50% 50%;
 }
 
 .u-section-2 .u-container-layout-2 {
@@ -90,7 +92,8 @@
 }
 
 .u-section-2 .u-image-3 {
-  background-image: url("images/koolshadow.jpg");
+  background-image: url("images/3v1fAIT89d.gif");
+  background-position: 50% 50%;
 }
 
 .u-section-2 .u-container-layout-3 {
@@ -154,7 +157,6 @@
   .u-section-2 .u-text-1 {
     width: 540px;
     margin-top: 0;
-    margin-bottom: 60px;
   }
 
   .u-section-2 .u-list-1 {

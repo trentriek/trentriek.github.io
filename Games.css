@@ -21,7 +21,8 @@
 }
 
 .u-section-1 .u-image-1 {
-  background-image: linear-gradient(0deg, rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url("images/default-image.jpg");
+  background-image: linear-gradient(0deg, rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url("images/UE4Editor_sdxOBZe67b.png");
+  background-position: 50% 50%;
 }
 
 .u-section-1 .u-container-layout-1 {
@@ -42,7 +43,8 @@
 }
 
 .u-section-1 .u-image-2 {
-  background-image: linear-gradient(0deg, rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url("images/default-image.jpg");
+  background-image: linear-gradient(0deg, rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url("images/Screenshot88.png");
+  background-position: 50% 50%;
 }
 
 .u-section-1 .u-container-layout-2 {
@@ -63,7 +65,8 @@
 }
 
 .u-section-1 .u-image-3 {
-  background-image: linear-gradient(0deg, rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url("images/default-image.jpg");
+  background-image: linear-gradient(0deg, rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url("images/Splash.png");
+  background-position: 50% 50%;
 }
 
 .u-section-1 .u-container-layout-3 {
@@ -84,7 +87,8 @@
 }
 
 .u-section-1 .u-image-4 {
-  background-image: linear-gradient(0deg, rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url("images/default-image.jpg");
+  background-image: linear-gradient(0deg, rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url("images/UE4Editor_1jknEXJW1R.jpg");
+  background-position: 50% 50%;
 }
 
 .u-section-1 .u-container-layout-4 {
@@ -96,6 +100,7 @@
 }
 
 .u-section-1 .u-btn-4 {
+  background-image: none;
   padding: 0;
 }
 
@@ -105,7 +110,7 @@
 }
 
 .u-section-1 .u-image-5 {
-  background-image: linear-gradient(0deg, rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url("images/d7c3bb8a5593d774b4ef35150e2864cc6105c251f1e411a66e46c096506e576f5e9692f7a2075cef8abad6ada29fb822ad4f85d902e4728b7911eb_1280.jpg");
+  background-image: linear-gradient(0deg, rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url("images/fox-idle.gif");
   background-position: 50% 50%;
 }
 
@@ -118,7 +123,6 @@
 }
 
 .u-section-1 .u-btn-5 {
-  background-image: none;
   padding: 0;
 }
 
@@ -128,7 +132,8 @@
 }
 
 .u-section-1 .u-image-6 {
-  background-image: linear-gradient(0deg, rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url("images/default-image.jpg");
+  background-image: linear-gradient(0deg, rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url("images/KitchenCat_Screenshot1.jpg");
+  background-position: 50% 50%;
 }
 
 .u-section-1 .u-container-layout-6 {
@@ -143,50 +148,12 @@
   padding: 0;
 }
 
-.u-section-1 .u-list-item-7 {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-.u-section-1 .u-image-7 {
-  background-image: linear-gradient(0deg, rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url("images/default-image.jpg");
-}
-
-.u-section-1 .u-container-layout-7 {
-  padding: 20px 30px;
-}
-
-.u-section-1 .u-text-7 {
-  margin: 0 auto;
-}
-
-.u-section-1 .u-list-item-8 {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-.u-section-1 .u-image-8 {
-  background-image: linear-gradient(0deg, rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url("images/default-image.jpg");
-}
-
-.u-section-1 .u-container-layout-8 {
-  padding: 20px 30px;
-}
-
-.u-section-1 .u-text-8 {
-  margin: 0 auto;
-}
-
-.u-section-1 .u-btn-7 {
-  padding: 0;
-}
-
 @media (max-width: 1199px) {
   .u-section-1 .u-repeater-1 {
     min-height: 412px;
   }
 
-  .u-section-1 .u-text-5 {
+  .u-section-1 .u-text-4 {
     margin-top: 189px;
   }
 }
@@ -194,10 +161,10 @@
 @media (max-width: 991px) {
   .u-section-1 .u-repeater-1 {
     grid-template-columns: 50% 50%;
-    min-height: 1262px;
+    min-height: 947px;
   }
 
-  .u-section-1 .u-text-5 {
+  .u-section-1 .u-text-4 {
     margin-top: 220px;
   }
 }
@@ -227,33 +194,23 @@
     padding-right: 10px;
   }
 
+  .u-section-1 .u-text-4 {
+    margin-top: 367px;
+  }
+
   .u-section-1 .u-container-layout-5 {
     padding-left: 10px;
     padding-right: 10px;
-  }
-
-  .u-section-1 .u-text-5 {
-    margin-top: 367px;
   }
 
   .u-section-1 .u-container-layout-6 {
     padding-left: 10px;
     padding-right: 10px;
   }
-
-  .u-section-1 .u-container-layout-7 {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-
-  .u-section-1 .u-container-layout-8 {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
 }
 
 @media (max-width: 575px) {
-  .u-section-1 .u-text-5 {
+  .u-section-1 .u-text-4 {
     margin-top: 234px;
   }
 }
