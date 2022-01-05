@@ -36330,7 +36330,7 @@ a.u-link.u-text-hover-grey-90:hover {
 }
 
 .u-footer .u-layout-cell-2 {
-  min-height: 156px;
+  min-height: 230px;
 }
 
 .u-footer .u-container-layout-2 {
@@ -36355,7 +36355,7 @@ a.u-link.u-text-hover-grey-90:hover {
 
 .u-footer .u-text-2 {
   font-size: 1.25rem;
-  margin: 20px auto 0;
+  margin: 32px auto 0;
 }
 
 .u-footer .u-icon-2 {
@@ -36369,11 +36369,11 @@ a.u-link.u-text-hover-grey-90:hover {
 }
 
 .u-footer .u-layout-cell-3 {
-  min-height: 156px;
+  min-height: 230px;
 }
 
 .u-footer .u-container-layout-3 {
-  padding: 30px;
+  padding: 30px 19px;
 }
 
 .u-footer .u-menu-1 {
@@ -36382,6 +36382,22 @@ a.u-link.u-text-hover-grey-90:hover {
 
 .u-footer .u-nav-2 {
   font-size: 1.25rem;
+}
+
+.u-footer .u-text-3 {
+  font-size: 1.25rem;
+  text-align: center;
+  margin: 30px auto 0;
+}
+
+.u-footer .u-icon-3 {
+  width: 36px;
+  height: 42px;
+}
+
+.u-footer .u-btn-3 {
+  background-image: none;
+  padding: 0;
 }
 @media (max-width: 1199px) {
   .u-footer .u-sheet-1 {
@@ -36399,7 +36415,7 @@ a.u-link.u-text-hover-grey-90:hover {
   }
 
   .u-footer .u-layout-cell-2 {
-    min-height: 129px;
+    min-height: 190px;
   }
 
   .u-footer .u-text-1 {
@@ -36412,7 +36428,7 @@ a.u-link.u-text-hover-grey-90:hover {
   }
 
   .u-footer .u-layout-cell-3 {
-    min-height: 129px;
+    min-height: 190px;
   }
 }
 @media (max-width: 991px) {
