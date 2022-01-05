@@ -16,6 +16,10 @@
   margin: 30px auto 0;
 }
 
+.u-section-1 .embed-responsive-1 {
+  position: absolute;
+}
+
 .u-section-1 .u-text-2 {
   width: 540px;
   margin: 30px auto 60px;
