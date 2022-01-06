@@ -20,17 +20,17 @@
 }
 
 .u-section-2 .u-sheet-1 {
-  min-height: 550px;
+  min-height: 645px;
 }
 
 .u-section-2 .u-text-1 {
-  width: 740px;
-  margin: 30px auto 60px;
+  width: 560px;
+  margin: 45px auto 0;
 }
 
 .u-section-2 .u-list-1 {
-  margin-top: 0;
-  margin-bottom: 40px;
+  margin-top: 25px;
+  margin-bottom: 0;
   width: 1140px;
 }
 
@@ -139,10 +139,6 @@
 }
 
 @media (max-width: 991px) {
-  .u-section-2 .u-text-1 {
-    width: 720px;
-  }
-
   .u-section-2 .u-list-1 {
     width: 720px;
   }
