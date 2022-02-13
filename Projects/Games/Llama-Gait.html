@@ -97,7 +97,42 @@
             <iframe style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;" class="embed-responsive-item" src="https://www.youtube.com/embed/sq-XVrWwnP0?mute=0&amp;showinfo=0&amp;controls=1&amp;start=0" frameborder="0" allowfullscreen=""></iframe>
           </div>
         </div>
-        <p class="u-align-center u-text u-text-2">Above is an Unreal project to create a procedural walk cycle for a ​quadruped. All movement of the body is determined by the placement of the Llama hooves, and uses the Unreal Control Rig Component. it is a combination of Blueprints and C++.</p>
+        <p class="u-align-center u-text u-text-2">Above is an Unreal project to create a procedural walk cycle for a ​quadruped. All movement of the body is determined by the placement of the Llama hooves, and uses the Unreal Control Rig Component.</p>
+        <div class="u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">
+          <div class="u-layout">
+            <div class="u-layout-row">
+              <div class="u-container-style u-layout-cell u-size-27 u-layout-cell-1">
+                <div class="u-container-layout u-valign-bottom u-container-layout-1">
+                  <p class="u-text u-text-default u-text-3"> Using Unreal's control rig, you can set controls from an actor. Here's the control Rig settup.</p>
+                  <img class="u-align-center u-image u-image-default u-image-1" src="../../images/Llama_CtlRig.PNG" alt="" data-image-width="927" data-image-height="656">
+                  <img class="u-align-center u-image u-image-default u-image-2" src="../../images/Llama_CtlRig_BP.PNG" alt="" data-image-width="1167" data-image-height="762">
+                </div>
+              </div>
+              <div class="u-container-style u-layout-cell u-size-33 u-layout-cell-2">
+                <div class="u-container-layout u-container-layout-2">
+                  <p class="u-text u-text-4">Externally the character BP keeps track of pacing to know when to pick up the hooves and lift the body based timing. This info is passed to the control rig.</p>
+                  <img class="u-align-center u-image u-image-contain u-image-default u-image-3" src="../../images/LlamaChar_BP_2.PNG" alt="" data-image-width="1160" data-image-height="832">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-2">
+          <div class="u-layout">
+            <div class="u-layout-row">
+              <div class="u-container-style u-layout-cell u-size-30 u-layout-cell-3">
+                <div class="u-container-layout u-container-layout-3">
+                  <p class="u-text u-text-default u-text-5">This project is currently being improved; I am replacing the movement component to a system that will control momentum, and transfering the code into C++. I also in the future want to consider improving deformations either through better model weight painting or creating some system in Unreal that moves muscles.</p>
+                </div>
+              </div>
+              <div class="u-container-style u-layout-cell u-size-30 u-layout-cell-4">
+                <div class="u-container-layout u-valign-top u-container-layout-4">
+                  <img class="u-image u-image-default u-image-4" src="../../images/LlamaChar_C.PNG" alt="" data-image-width="1381" data-image-height="793">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
     
