@@ -6,9 +6,9 @@
     <meta name="keywords" content="Flopper">
     <meta name="description" content="">
     <meta name="page_type" content="np-template-header-footer-from-plugin">
-    <title>Flopper</title>
+    <title>Llama Gait Old</title>
     <link rel="stylesheet" href="../../nicepage.css" media="screen">
-<link rel="stylesheet" href="Flopper.css" media="screen">
+<link rel="stylesheet" href="Llama-Gait-Old.css" media="screen">
     <script class="u-script" type="text/javascript" src="../../jquery.js" defer=""></script>
     <script class="u-script" type="text/javascript" src="../../nicepage.js" defer=""></script>
     <meta name="generator" content="Nicepage 4.7.1, nicepage.com">
@@ -23,7 +23,7 @@
 		"logo": "../../images/koolshadow8color.png"
 }</script>
     <meta name="theme-color" content="#478ac9">
-    <meta property="og:title" content="Flopper">
+    <meta property="og:title" content="Llama Gait Old">
     <meta property="og:description" content="">
     <meta property="og:type" content="website">
   </head>
@@ -91,30 +91,46 @@
           </div>
         </nav>
       </div></header>
-    <section class="u-clearfix u-section-1" id="sec-5f08">
+    <section class="u-clearfix u-section-1" id="sec-5799">
       <div class="u-clearfix u-sheet u-sheet-1">
-        <h1 class="u-align-center u-custom-font u-font-roboto u-text u-text-default u-text-1">Flopper<br>
-        </h1>
+        <h1 class="u-align-center u-custom-font u-font-roboto u-text u-text-default u-text-1">Procedural Llama Gait</h1>
         <div class="u-video u-video-contain u-video-1">
           <div class="embed-responsive embed-responsive-1">
-            <iframe style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;" class="embed-responsive-item" src="https://www.youtube.com/embed/YLjFKv78jjk?mute=0&amp;showinfo=0&amp;controls=1&amp;start=0" frameborder="0" allowfullscreen=""></iframe>
+            <iframe style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;" class="embed-responsive-item" src="https://www.youtube.com/embed/sq-XVrWwnP0?mute=0&amp;showinfo=0&amp;controls=1&amp;start=0" frameborder="0" allowfullscreen=""></iframe>
           </div>
         </div>
-        <p class="u-align-center u-text u-text-2"> Flopper was developed with the Unreal game engine. The player starts as a fish out of water, and attempts to find the&nbsp;lake&nbsp;in an environment which is randomized every time the game begins.&nbsp;<br>
-        </p>
+        <p class="u-align-center u-text u-text-2">Above is an Unreal project to create a procedural walk cycle for a ​quadruped. All movement of the body is determined by the placement of the Llama hooves, and uses the Unreal Control Rig Component.</p>
         <div class="u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">
           <div class="u-layout">
             <div class="u-layout-row">
               <div class="u-container-style u-layout-cell u-size-27 u-layout-cell-1">
-                <div class="u-container-layout u-valign-top u-container-layout-1">
-                  <img class="u-align-center u-image u-image-default u-image-1" src="../../images/UE4Editor_GxiEjL2dva.png" alt="" data-image-width="1037" data-image-height="741">
-                  <img class="u-align-center u-image u-image-default u-image-2" src="../../images/UE4Editor_Fn5mgd416l.png" alt="" data-image-width="1037" data-image-height="737">
+                <div class="u-container-layout u-valign-bottom u-container-layout-1">
+                  <p class="u-text u-text-default u-text-3"> Using Unreal's control rig, you can set controls from an actor. Here's the control Rig settup.</p>
+                  <img class="u-align-center u-image u-image-default u-image-1" src="../../images/Llama_CtlRig.PNG" alt="" data-image-width="927" data-image-height="656">
+                  <img class="u-align-center u-image u-image-default u-image-2" src="../../images/Llama_CtlRig_BP.PNG" alt="" data-image-width="1167" data-image-height="762">
                 </div>
               </div>
               <div class="u-container-style u-layout-cell u-size-33 u-layout-cell-2">
                 <div class="u-container-layout u-container-layout-2">
-                  <p class="u-text u-text-3"> My role in this project was a game developer, working on level generation, fish movement, UI functionality and the oxygen mechanic. The level re-generates every playthrough by choosing a saved topology for a new surface, and then calling a list of raycasts to place new items on the surface as seen here. This game was my introduciton to Unreal game development and proceduralism.</p>
-                  <img class="u-align-center u-image u-image-contain u-image-default u-image-3" src="../../images/UE4Editor_0kqxAx6S5L.png" alt="" data-image-width="1036" data-image-height="738">
+                  <p class="u-text u-text-4">Externally the character BP keeps track of pacing to know when to pick up the hooves and lift the body based timing. This info is passed to the control rig.</p>
+                  <img class="u-align-center u-image u-image-contain u-image-default u-image-3" src="../../images/LlamaChar_BP_2.PNG" alt="" data-image-width="1160" data-image-height="832">
+                  <p class="u-text u-text-5">The key to this current setup is a couple of elements: first the legs are composed of two seperate iks, the bottom knee ik being calculated before the shoulder ik. the&nbsp;</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-2">
+          <div class="u-layout">
+            <div class="u-layout-row">
+              <div class="u-container-style u-layout-cell u-size-30 u-layout-cell-3">
+                <div class="u-container-layout u-container-layout-3">
+                  <p class="u-text u-text-default u-text-6">This project is currently being improved; I am replacing the movement component to a system that will control momentum, and transfering the code into C++. I also in the future want to consider improving deformations either through better model weight painting or creating some system in Unreal that moves muscles.</p>
+                </div>
+              </div>
+              <div class="u-container-style u-layout-cell u-size-30 u-layout-cell-4">
+                <div class="u-container-layout u-valign-top u-container-layout-4">
+                  <img class="u-image u-image-default u-image-4" src="../../images/LlamaChar_C.PNG" alt="" data-image-width="1381" data-image-height="793">
                 </div>
               </div>
             </div>
@@ -210,7 +226,7 @@
       </div></footer>
     <section class="u-backlink u-clearfix u-grey-80">
       <a class="u-link" href="https://nicepage.com/website-templates" target="_blank">
-        <span>Website Templates</span>
+        <span>Free Website Templates</span>
       </a>
       <p class="u-text">
         <span>created with</span>
