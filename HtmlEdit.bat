@@ -13,16 +13,26 @@ for /r %%G in (*.html) do (
 )
 set n=%i%
 
-REM for /L %%i in (1,1,%n%) do echo !array[%%i]!
+for /L %%i in (1,1,%n%) do echo !array[%%i]!
 
+set j = 0
 for /L %%i in (1,1,%n%) do (
-    for /F "delims=" %%a in ('findstr /n /c:"u-backlink u-clearfix u-grey-80" !array[%%i]!') do (
+    for /f "delims=" %%a in ('findstr /n /c:"u-backlink u-clearfix u-grey-80" !array[%%i]!') do (
         set var=%%a
-        echo !var!
+
+
+
+        ::todelete
+        set /A j+=1
+        set array[!j!]=!var:~0,3!
     )
 )
 
-    ::for /f "tokens=*" %%a in (!array[%%i]!) do (
-    ::echo line=%%a
+::todelete
+set m=%j%
+for /L %%j in (1,1,%m%) do echo !array[%%j]!
 
-    ::)
+
+
+
+    ::  echo !var:~0,3!
