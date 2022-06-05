@@ -1,15 +1,15 @@
-::some echo settings, for printing things
 @echo off
 setlocal EnableDelayedExpansion
 
+rem get the source directory for reference & create a temporary folder to put all temp files in. 
 SET "sourcedir=%CD%"
-::SET "destdir=u:\your results"
+md temphtml
 
-echo !sourcedir!
-
+rem for each html, read through with findstr to find the line to be deleted. if found (linecount is valid), copy contents to new file.
+rem to remove multiple lines, itterate backwards from the line to delete by subtracting 1. when at the line to delete this will be 0; if linecount is 0, do not copy. Same for linecount - n lines
 for /r %%G in (*.html) do (
     SET "linecount="
-    echo %%G
+    
     FOR /f "delims=:" %%e IN ('findstr /n /c:"u-backlink u-clearfix u-grey-80" "%%G"') DO (
         SET /a linecount=%%e 
     )
@@ -23,4 +23,8 @@ for /r %%G in (*.html) do (
         )
     )>"%sourcedir%\temphtml\tempfile"& MOVE /y "%sourcedir%\temphtml\tempfile" "%%G" >nul
 )
+
+rem delete any temp files
+rd "temphtml"
+
 GOTO :EOF
