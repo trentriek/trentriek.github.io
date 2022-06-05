@@ -17,10 +17,10 @@ for /r %%G in (*.html) do (
     IF DEFINED linecount (
         FOR /f "usebackqdelims=" %%b IN ("%%G") DO (
             SET /a linecount-=1
-            ::echo hello
-            IF !linecount! gtr 0 ECHO %%b
-            IF !linecount! lss -10 ECHO %%b
+            
+            IF !linecount! gtr 0 ECHO.%%b
+            IF !linecount! lss -10 ECHO.%%b
         )
-    )>"%sourcedir%\temphtml\tempfile.html"
+    )>"%sourcedir%\temphtml\tempfile"& MOVE /y "%sourcedir%\temphtml\tempfile" "%%G" >nul
 )
 GOTO :EOF
