@@ -1,38 +1,26 @@
-REM FOR /r %G IN (*.html) do @echo %G
-
 ::some echo settings, for printing things
 @echo off
 setlocal EnableDelayedExpansion
 
+SET "sourcedir=%CD%"
+::SET "destdir=u:\your results"
 
-::start by creating a list of html files
-set i=0
+echo !sourcedir!
+
 for /r %%G in (*.html) do (
-    set /A i+=1
-    set array[!i!]=%%G
-)
-set n=%i%
-
-for /L %%i in (1,1,%n%) do echo !array[%%i]!
-
-set j = 0
-for /L %%i in (1,1,%n%) do (
-    for /f "delims=" %%a in ('findstr /n /c:"u-backlink u-clearfix u-grey-80" !array[%%i]!') do (
-        set var=%%a
-
-
-
-        ::todelete
-        set /A j+=1
-        set array[!j!]=!var:~0,3!
+    SET "linecount="
+    echo %%G
+    FOR /f "delims=:" %%e IN ('findstr /n /c:"u-backlink u-clearfix u-grey-80" "%%G"') DO (
+        SET /a linecount=%%e 
     )
+    ::echo there
+    IF DEFINED linecount (
+        FOR /f "usebackqdelims=" %%b IN ("%%G") DO (
+            SET /a linecount-=1
+            ::echo hello
+            IF !linecount! gtr 0 ECHO %%b
+            IF !linecount! lss -10 ECHO %%b
+        )
+    )>"%sourcedir%\temphtml\tempfile.html"
 )
-
-::todelete
-set m=%j%
-for /L %%j in (1,1,%m%) do echo !array[%%j]!
-
-
-
-
-    ::  echo !var:~0,3!
+GOTO :EOF
