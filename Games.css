@@ -21,7 +21,7 @@
 }
 
 .u-section-1 .u-image-1 {
-  background-image: linear-gradient(0deg, rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url("images/UE4Editor_sdxOBZe67b.png");
+  background-image: linear-gradient(0deg, rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url("images/ForensicNursing4.PNG");
   background-position: 50% 50%;
 }
 
@@ -43,7 +43,7 @@
 }
 
 .u-section-1 .u-image-2 {
-  background-image: linear-gradient(0deg, rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url("images/ForensicNursing4.PNG");
+  background-image: linear-gradient(0deg, rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url("images/Splash.png");
   background-position: 50% 50%;
 }
 
@@ -65,7 +65,7 @@
 }
 
 .u-section-1 .u-image-3 {
-  background-image: linear-gradient(0deg, rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url("images/Splash.png");
+  background-image: linear-gradient(0deg, rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url("images/Screenshot88.png");
   background-position: 50% 50%;
 }
 
@@ -87,7 +87,7 @@
 }
 
 .u-section-1 .u-image-4 {
-  background-image: linear-gradient(0deg, rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url("images/temp4.PNG");
+  background-image: linear-gradient(0deg, rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url("images/UE4Editor_1jknEXJW1R.jpg");
   background-position: 50% 50%;
 }
 
@@ -100,6 +100,8 @@
 }
 
 .u-section-1 .u-btn-4 {
+  background-image: none;
+  font-size: 1.875rem;
   padding: 0;
 }
 
@@ -109,7 +111,7 @@
 }
 
 .u-section-1 .u-image-5 {
-  background-image: linear-gradient(0deg, rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url("images/Screenshot88.png");
+  background-image: linear-gradient(0deg, rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url("images/fox-idle.gif");
   background-position: 50% 50%;
 }
 
@@ -131,7 +133,7 @@
 }
 
 .u-section-1 .u-image-6 {
-  background-image: linear-gradient(0deg, rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url("images/UE4Editor_1jknEXJW1R.jpg");
+  background-image: linear-gradient(0deg, rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url("images/KitchenCat_Screenshot1.jpg");
   background-position: 50% 50%;
 }
 
@@ -144,8 +146,6 @@
 }
 
 .u-section-1 .u-btn-6 {
-  background-image: none;
-  font-size: 1.875rem;
   padding: 0;
 }
 
@@ -155,7 +155,7 @@
 }
 
 .u-section-1 .u-image-7 {
-  background-image: linear-gradient(0deg, rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url("images/fox-idle.gif");
+  background-image: linear-gradient(0deg, rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url("images/temp4.PNG");
   background-position: 50% 50%;
 }
 
@@ -168,28 +168,6 @@
 }
 
 .u-section-1 .u-btn-7 {
-  padding: 0;
-}
-
-.u-section-1 .u-list-item-8 {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-.u-section-1 .u-image-8 {
-  background-image: linear-gradient(0deg, rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url("images/KitchenCat_Screenshot1.jpg");
-  background-position: 50% 50%;
-}
-
-.u-section-1 .u-container-layout-8 {
-  padding: 20px 30px;
-}
-
-.u-section-1 .u-text-8 {
-  margin: 0 auto;
-}
-
-.u-section-1 .u-btn-8 {
   padding: 0;
 }
 
@@ -245,11 +223,6 @@
     padding-left: 10px;
     padding-right: 10px;
   }
-
-  .u-section-1 .u-container-layout-8 {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
 }
 
 @media (max-width: 575px) {
@@ -261,7 +234,7 @@
     margin-bottom: 60px;
   }
 
-  .u-section-1 .u-btn-6 {
+  .u-section-1 .u-btn-4 {
     font-size: 1.5rem;
   }
 }

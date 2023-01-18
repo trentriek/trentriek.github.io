@@ -3,12 +3,12 @@
 }
 
 .u-section-1 .u-sheet-1 {
-  min-height: 129px;
+  min-height: 143px;
 }
 
 .u-section-1 .u-text-1 {
   font-size: 4.5rem;
-  margin: 39px auto;
+  margin: 39px auto 25px;
 }
 
 @media (max-width: 575px) {
@@ -20,12 +20,12 @@
 }
 
 .u-section-2 .u-sheet-1 {
-  min-height: 645px;
+  min-height: 550px;
 }
 
 .u-section-2 .u-text-1 {
   width: 560px;
-  margin: 45px auto 0;
+  margin: 0 auto;
 }
 
 .u-section-2 .u-list-1 {
@@ -45,7 +45,7 @@
 }
 
 .u-section-2 .u-image-1 {
-  background-image: url("images/SIsoRUR499.gif");
+  background-image: linear-gradient(0deg, rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url("images/UE4Editor_rjnGczz0Ha.png");
   background-position: 50% 50%;
 }
 
@@ -68,7 +68,7 @@
 }
 
 .u-section-2 .u-image-2 {
-  background-image: url("images/maya_IxrCjPoLjB.png");
+  background-image: url("images/3v1fAIT89d.png");
   background-position: 50% 50%;
 }
 
@@ -91,7 +91,7 @@
 }
 
 .u-section-2 .u-image-3 {
-  background-image: url("images/3v1fAIT89d.png");
+  background-image: url("images/maya_IxrCjPoLjB.png");
   background-position: 50% 50%;
 }
 
@@ -146,7 +146,6 @@
 @media (max-width: 767px) {
   .u-section-2 .u-text-1 {
     width: 540px;
-    margin-top: 0;
   }
 
   .u-section-2 .u-repeater-1 {
@@ -176,11 +175,13 @@
 }
 
 .u-section-2 .u-btn-1,
-.u-section-2 .u-btn-1:before {
-  transition-property: fill, color, background-color, stroke-width, border-style, border-width, border-top-width, border-left-width, border-right-width, border-bottom-width, custom-border, borders, box-shadow, text-shadow, opacity, border-radius, stroke, border-color, font-size, font-style, font-weight, text-decoration, letter-spacing, transform, background-image, background-size, background-position;
+.u-section-2 .u-btn-1:before,
+.u-section-2 .u-btn-1 > .u-container-layout:before {
+  transition-property: fill, color, background-color, stroke-width, border-style, border-width, border-top-width, border-left-width, border-right-width, border-bottom-width, custom-border, borders, box-shadow, text-shadow, opacity, border-radius, stroke, border-color, font-size, font-style, font-weight, text-decoration, letter-spacing, transform, background-image, image-zoom, background-size, background-position;
 }
 
-.u-section-2 .u-btn-2,
-.u-section-2 .u-btn-2:before {
-  transition-property: fill, color, background-color, stroke-width, border-style, border-width, border-top-width, border-left-width, border-right-width, border-bottom-width, custom-border, borders, box-shadow, text-shadow, opacity, border-radius, stroke, border-color, font-size, font-style, font-weight, text-decoration, letter-spacing, transform, background-image, background-size, background-position;
+.u-section-2 .u-btn-3,
+.u-section-2 .u-btn-3:before,
+.u-section-2 .u-btn-3 > .u-container-layout:before {
+  transition-property: fill, color, background-color, stroke-width, border-style, border-width, border-top-width, border-left-width, border-right-width, border-bottom-width, custom-border, borders, box-shadow, text-shadow, opacity, border-radius, stroke, border-color, font-size, font-style, font-weight, text-decoration, letter-spacing, transform, background-image, image-zoom, background-size, background-position;
 }
