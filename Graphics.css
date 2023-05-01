@@ -12,7 +12,6 @@
   grid-template-columns: 50% 50%;
   min-height: 511px;
   grid-gap: 0px 0px;
-  grid-auto-columns: 50%;
 }
 
 .u-section-1 .u-image-1 {
@@ -75,7 +74,6 @@
 
   .u-section-1 .u-repeater-1 {
     grid-template-columns: 50% 50%;
-    grid-auto-columns: 100%;
   }
 
   .u-section-1 .u-text-1 {
