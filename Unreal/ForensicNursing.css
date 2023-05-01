@@ -82,7 +82,7 @@
 }
 
 .u-section-3 .u-layout-cell-1 {
-  min-height: 713px;
+  min-height: 718px;
 }
 
 .u-section-3 .u-container-layout-1 {
@@ -105,16 +105,46 @@
   margin: 18px 0 0;
 }
 
+.u-section-3 .u-image-1 {
+  width: 422px;
+  height: 169px;
+  margin: 10px auto 0 60px;
+}
+
+.u-section-3 .u-text-5 {
+  margin: 0;
+}
+
 .u-section-3 .u-layout-cell-2 {
-  min-height: 713px;
+  min-height: 740px;
 }
 
 .u-section-3 .u-container-layout-2 {
   padding: 0;
 }
 
-.u-section-3 .u-text-5 {
-  margin: 289px auto 0 12px;
+.u-section-3 .u-video-1 {
+  width: 422px;
+  height: 237px;
+  margin: 48px 60px 0 auto;
+}
+
+.u-section-3 .embed-responsive-1 {
+  position: absolute;
+}
+
+.u-section-3 .u-text-6 {
+  margin: 10px 60px 0 83px;
+}
+
+.u-section-3 .u-image-2 {
+  width: 547px;
+  height: 274px;
+  margin: 42px auto 0;
+}
+
+.u-section-3 .u-text-7 {
+  margin: 0 9px;
 }
 
 @media (max-width: 1199px) {
@@ -128,7 +158,7 @@
   }
 
   .u-section-3 .u-layout-cell-1 {
-    min-height: 588px;
+    min-height: 592px;
   }
 
   .u-section-3 .u-text-2 {
@@ -136,13 +166,32 @@
     margin-right: 0;
   }
 
-  .u-section-3 .u-layout-cell-2 {
-    background-position: 50% 50%;
-    min-height: 588px;
+  .u-section-3 .u-image-1 {
+    margin-left: 43px;
   }
 
-  .u-section-3 .u-text-5 {
+  .u-section-3 .u-layout-cell-2 {
+    background-position: 50% 50%;
+    min-height: 610px;
+  }
+
+  .u-section-3 .u-video-1 {
+    margin-right: 43px;
+  }
+
+  .u-section-3 .u-text-6 {
+    margin-right: 43px;
     margin-left: 0;
+  }
+
+  .u-section-3 .u-image-2 {
+    width: 465px;
+    height: 233px;
+  }
+
+  .u-section-3 .u-text-7 {
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 
@@ -151,7 +200,45 @@
     min-height: 100px;
   }
 
+  .u-section-3 .u-image-1 {
+    width: 355px;
+    height: 142px;
+    margin-left: 0;
+  }
+
   .u-section-3 .u-layout-cell-2 {
     min-height: 100px;
+  }
+
+  .u-section-3 .u-video-1 {
+    width: 355px;
+    height: 199px;
+    margin-right: 0;
+  }
+
+  .u-section-3 .u-text-6 {
+    margin-right: 0;
+  }
+
+  .u-section-3 .u-image-2 {
+    width: 355px;
+    height: 178px;
+  }
+}
+
+@media (max-width: 575px) {
+  .u-section-3 .u-image-1 {
+    width: 340px;
+    height: 136px;
+  }
+
+  .u-section-3 .u-video-1 {
+    width: 340px;
+    height: 191px;
+  }
+
+  .u-section-3 .u-image-2 {
+    width: 340px;
+    height: 170px;
   }
 }
