@@ -1,4 +1,4 @@
-<DOCTYPE html>
+<!DOCTYPE html>
 <html style="font-size: 16px;" lang="en"><head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
@@ -11,6 +11,9 @@
     <script class="u-script" type="text/javascript" src="../nicepage.js" defer=""></script>
     <meta name="generator" content="Nicepage 4.21.12, nicepage.com">
     <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+    
+    
+    
     
     
     
@@ -83,35 +86,42 @@
     </section>
     <section class="u-clearfix u-grey-5 u-section-2" id="sec-ff65">
       <div class="u-clearfix u-sheet u-sheet-1">
-        <p class="u-text u-text-1"> This was a test project to practice creating C++ classes In unreal. I created a Boid system that moved static meshes, emulating a particle effect.</p>
+        <p class="u-text u-text-1"> This was a project in creating C++ classes In unreal. I created an Actor that used a boid system to move meshes. ​The challenge was to create a standard boid swarm, then modify it so that it appeard to move like insects.&nbsp;</p>
         <div class="u-align-center u-uploaded-video u-video u-video-contain u-video-1">
           <div class="embed-responsive">
             <video class="embed-responsive-item">
-              <source src="../files/BoidInsectSwarm.mp4" type="video/mp4">
+              <source src="../files/NewBoidSystem.mp4" type="video/mp4">
               <p>Your browser does not support HTML5 video.</p>
             </video>
             <button class="u-video-poster"></button>
           </div>
         </div>
+        <p class="u-text u-text-2"> The challenge in this is to make the boid object not&nbsp; factor in this was to update the parameters; a standard boid system uses the three parameters, of seperation, alignment, and cohesion, but these allow birds to flock; Insects have a sporatic patten of movment, unorganised, but still forms emrgent grouping behavior.</p>
       </div>
     </section>
     <section class="u-clearfix u-grey-5 u-section-3" id="carousel_d848">
       <div class="u-clearfix u-sheet u-sheet-1">
-        <div class="u-clearfix u-expanded-width u-gutter-10 u-layout-wrap u-layout-wrap-1">
-          <div class="u-layout" style="">
-            <div class="u-layout-row" style="">
-              <div class="u-container-style u-layout-cell u-left-cell u-size-30 u-size-xs-60 u-layout-cell-1" src="">
+        <div class="u-clearfix u-gutter-10 u-layout-wrap u-layout-wrap-1">
+          <div class="u-gutter-0 u-layout">
+            <div class="u-layout-row">
+              <div class="u-container-style u-layout-cell u-size-30 u-layout-cell-1">
                 <div class="u-container-layout u-container-layout-1">
-                  <p class="u-align-left u-text u-text-1"> This primarially involved two things; learning about the stages of Actor instantiation in the unreal engine, as well as practice in exposing properties of UObjects to the unreal interface. This was a very fun project and I liked the result so I posted it.<br>
-                  </p>
-                  <img class="u-image u-image-default u-image-1" src="../images/image.png" alt="" data-image-width="911" data-image-height="681">
-                  <p class="u-align-center u-small-text u-text u-text-variant u-text-2">An example of implementing different actor instantiation phase functions.</p>
+                  <img class="u-align-center u-image u-image-default u-image-1" src="../images/c9d1c3574254fe21537136ea745d2f89--nc-art-ideas.jpg" alt="" data-image-width="640" data-image-height="425">
+                  <p class="u-align-center u-small-text u-text u-text-variant u-text-1">Here we can see the Insects have a swarm "Center" : this center has a rotational pull the farther the insects get away from it.&nbsp;</p>
                 </div>
               </div>
-              <div class="u-align-center u-container-style u-layout-cell u-right-cell u-size-30 u-size-xs-60 u-uploaded-video u-layout-cell-2" src="">
-                <div class="u-container-layout u-container-layout-2" src="">
-                  <img class="u-image u-image-default u-image-2" src="../images/UE4Editor_VPPWr4ivbn.png" alt="" data-image-width="776" data-image-height="687">
-                  <p class="u-align-center u-small-text u-text u-text-variant u-text-3">Showcasing exposed varaibles from the C++ class. You can modify the boid inputs as well as the container boxes size/visibility.</p>
+              <div class="u-align-center u-container-style u-layout-cell u-size-30 u-layout-cell-2">
+                <div class="u-container-layout u-container-layout-2">
+                  <div class="u-uploaded-video u-video u-video-contain u-video-1">
+                    <div class="embed-responsive">
+                      <video class="embed-responsive-item">
+                        <source src="../files/BoidInsectSwarm.mp4" type="video/mp4">
+                        <p>Your browser does not support HTML5 video.</p>
+                      </video>
+                      <button class="u-video-poster"></button>
+                    </div>
+                  </div>
+                  <p class="u-align-center u-text u-text-2"> This video shows a standard boid movement, with the three parameters working togeather to create uniform, aligned movement in a direction. moves well, but not insect-like</p>
                 </div>
               </div>
             </div>
@@ -119,6 +129,59 @@
         </div>
       </div>
     </section>
+    <section class="u-clearfix u-grey-5 u-section-4" id="sec-3e5a">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <p class="u-text u-text-1">There are a lot of papers trying to simulate this phenomenon. However, in this case the best solution was to me, the easiest; since insects are different, they need different parameters. In this case, the alignment parameter was removed, and the strength of other parameters modified.&nbsp;<br>
+          <br>Additionally, it is obsereved that insects have different objectives in a swarm; they are typically looking for mates, and trying to stay close togeather so as to be fivislbe to other insects farther away. Thus, a <span style="font-style: italic;">goal&nbsp;<span style="font-style: normal;"> parameter and a <span style="font-style: italic;">swarm&nbsp;<span style="font-style: normal;"> parameter were introduced. The goal was another insect within the swarm; the swarm reference the swarm center. Insects would move toawrds these elements while maintainting the cohesion and seperation from before. Small other rules also updated the strength, such as moving too far away from the center forced the insect to obey only the swarm goal</span>
+              </span>
+            </span>
+          </span>
+        </p>
+      </div>
+    </section>
+    <section class="u-clearfix u-grey-5 u-section-5" id="carousel_2be6">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <div class="u-clearfix u-gutter-10 u-layout-wrap u-layout-wrap-1">
+          <div class="u-layout" style="">
+            <div class="u-layout-row" style="">
+              <div class="u-container-style u-layout-cell u-left-cell u-size-30 u-size-xs-60 u-layout-cell-1" src="">
+                <div class="u-container-layout u-valign-top u-container-layout-1">
+                  <img class="u-image u-image-default u-image-1" src="../images/UE4Editor_ZUMcSgxNWw.gif" alt="" data-image-width="658" data-image-height="508">
+                  <p class="u-align-center u-small-text u-text u-text-variant u-text-1">Here we can see the boid center moving as the mean position of all the insects. Moving out of its radius makes the insect return.</p>
+                </div>
+              </div>
+              <div class="u-align-center u-container-style u-layout-cell u-right-cell u-size-30 u-size-xs-60 u-uploaded-video u-layout-cell-2" src="">
+                <div class="u-container-layout u-container-layout-2" src="">
+                  <img class="u-image u-image-default u-image-2" src="../images/UE4Editor_12gO9aGHEC.png" alt="" data-image-width="726" data-image-height="523">
+                  <p class="u-align-center u-small-text u-text u-text-variant u-text-2">Showcasing exposed variables from the C++ class. You can modify the boid inputs as well as the container boxes size/visibility.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="u-clearfix u-grey-5 u-section-6" id="carousel_ebea">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <div class="u-clearfix u-gutter-10 u-layout-wrap u-layout-wrap-1">
+          <div class="u-gutter-0 u-layout">
+            <div class="u-layout-row">
+              <div class="u-container-style u-layout-cell u-size-60 u-layout-cell-1">
+                <div class="u-container-layout u-container-layout-1">
+                  <p class="u-align-center u-text u-text-1"> This project was usful in learning actor coding/construction in Unreal; to expose and make things work in the interface, different properties had to be set at different stages. This was a very fun project and I liked the result so I posted it!<br>
+                  </p>
+                  <img class="u-image u-image-default u-image-1" src="../images/image.png" alt="" data-image-width="911" data-image-height="681">
+                  <p class="u-align-center u-small-text u-text u-text-variant u-text-2">An example of implementing parts of an actor at different stages.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <style class="u-overlap-style">.u-overlap:not(.u-sticky-scroll) .u-header {
+background-color: #333333 !important
+}</style>
     
     
     <footer class="u-clearfix u-footer u-grey-80" id="sec-ca1d"><div class="u-clearfix u-sheet u-sheet-1">
@@ -191,5 +254,16 @@
           </div>
         </div>
       </div></footer>
-  linecount=
-</body></html>linecount=
+    <section class="u-backlink u-clearfix u-grey-80">
+      <a class="u-link" href="https://nicepage.com/html-templates" target="_blank">
+        <span>HTML Template</span>
+      </a>
+      <p class="u-text">
+        <span>created with</span>
+      </p>
+      <a class="u-link" href="" target="_blank">
+        <span>Website Builder Software</span>
+      </a>. 
+    </section>
+  
+</body></html>

@@ -1,4 +1,4 @@
-<DOCTYPE html>
+<!DOCTYPE html>
 <html style="font-size: 16px;" lang="en"><head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
@@ -89,8 +89,8 @@
             <div class="u-layout-row" style="">
               <div class="u-container-style u-layout-cell u-left-cell u-size-30 u-size-xs-60 u-layout-cell-1" src="">
                 <div class="u-container-layout u-container-layout-1">
-                  <p class="u-align-left u-text u-text-1"> For my capstone in Grad school, I wanted to combine my college studies with my personal interests. I made a goal to create a system that could solve for quadrupedal (for legged animal) leg movement, and could also transition between different gaits based on the animals current velocity.&nbsp;<br>
-                    <br>This project was a great exploration of Unreal's animation systems in C++, particularly how custom solvers are built. I also learned other elements of Unreal, such as adding modules to the VS solution, and how to build &amp; import good skeletal mesh assets.<br>
+                  <p class="u-align-left u-text u-text-1"> For my capstone in Grad school, I wanted to combine my college studies with my personal interests. I made a goal to create a system that could solve for quadrupedal (for legged animal) leg movement that could also transition between different gaits based on the animals current velocity.&nbsp;<br>
+                    <br>This project was a great exploration of Unreal's animation systems in C++, particularly how custom animation solvers are built. I also learned other elements of Unreal, such as adding modules to the VS solution.<br>
                   </p>
                   <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-file-link u-hover-none u-none u-text-palette-1-base u-btn-1" href="../files/TrentRiekCaptstonePaper.docx" target="_blank"><span class="u-file-icon u-icon"><img src="../images/179483.png" alt=""></span>&nbsp;Paper 
                   </a>
@@ -118,8 +118,8 @@
             <div class="u-layout-row" style="">
               <div class="u-container-style u-layout-cell u-left-cell u-size-30 u-size-xs-60 u-layout-cell-1" src="">
                 <div class="u-container-layout u-container-layout-1">
-                  <h2 class="u-align-left u-text u-text-1">The Problem</h2>
-                  <p class="u-align-left u-text u-text-2"> Procedural animation in games is a well studied topic, but not as many games have procedural animations for animals that are not bipedal.&nbsp;On top of this, animals have different gaits based on both their body type, and the speed they are going.&nbsp;It is not as simple as CCDIK/FABRIK solvers do not represent four leg movement well because they do not respect the individual joint constraints very well (which joints rotate first?). <br>
+                  <h2 class="u-align-left u-text u-text-1">The problem</h2>
+                  <p class="u-align-left u-text u-text-2"> prodecural animation in games is a well studied topic, but not as many games have procedural animations for animals that are not bipedal.&nbsp;On top of this, animals have different gaits based on both their body type, and the speed they are going.&nbsp;It is not as simple as CCDIK/FABRIK solvers to not represent four leg movement well because they do not respect the individual joint constraints very well (which joints rotate first?). <br>
                   </p>
                   <p class="u-align-left u-text u-text-3">Through research I discovered that much of an animals body and leg movment can be reconstructed through a few rules for different parts of the body. It was decided that:</p>
                   <ol class="u-align-left u-text u-text-4">
@@ -136,9 +136,9 @@
               <div class="u-align-center u-container-style u-layout-cell u-right-cell u-size-30 u-size-xs-60 u-layout-cell-2" src="">
                 <div class="u-container-layout u-container-layout-2" src="">
                   <img class="u-image u-image-default u-image-1" src="../images/Llama_CtlRig_BP.PNG" alt="" data-image-width="1167" data-image-height="762">
-                  <p class="u-small-text u-text u-text-default u-text-variant u-text-6">An Example of trying to use Unreal's control rig for procedural movement; using multibone solvers is complicated and does not produce good results&nbsp;</p>
+                  <p class="u-small-text u-text u-text-default u-text-variant u-text-6">An Example of trying to use Unreal's control rig for procedural movement; using multipbone solvers is complicated and does not produce good results&nbsp;</p>
                   <img class="u-image u-image-default u-image-2" src="../images/LlamaExtension.png" alt="" data-image-width="476" data-image-height="401">
-                  <p class="u-small-text u-text u-text-default u-text-variant u-text-7">Through This picture, we show the order of operations for the Leg solve; 1. extend the should towards the location 2. place the foot at the desired location, and 3; let a two-bone ik solve the knee</p>
+                  <p class="u-small-text u-text u-text-default u-text-variant u-text-7">Through This picture, we show the order of operations for the Leg solve; 1. extend the should towards the location 2. place the foot at the desired location, and 3; let a single ik solve the knee.</p>
                 </div>
               </div>
             </div>
@@ -159,17 +159,17 @@
                     <li>A&nbsp;solver that used the above rules to create the position of the legs based on a desired location for the foot</li>
                     <li>A system that would determine the foot location based on the gait.</li>
                   </ol>
-                  <p class="u-align-left u-text u-text-default u-text-4">The solver was created in C++; a module was added to the project, and within it the necessary classes for an Unreal Animation BP Sovler node were created (<span style="font-style: italic;">FAnimNode_SkeletalControlBase </span>and sub classes for solving parts). A custom solver node was compiled and added to the animals animation BP.
+                  <p class="u-align-left u-text u-text-default u-text-4">The solver was created in C++; a module was added to the project, and within it the necesary classes for an Unreal Animation BP Sovler node were created (<span style="font-style: italic;">FAnimNode_SkeletalControlBase </span>and sub classes for solving parts). A custom solver node was compiled and added to the animals animation BP.
                   </p>
-                  <p class="u-align-left u-text u-text-default u-text-5">The foot location was determined by a gait system in a GaitMovement Compoenent, made in BP. This sould move scene components related to each foot, whose location would be passed into the animation BP to update the feet location. The results are seen in the video up top.</p>
-                  <p class="u-align-left u-text u-text-default u-text-6">From this project I was able to learn valuable understinag of the Unreal Engine, including how modules are created and how C++ integrates well with other parts.</p>
+                  <p class="u-align-left u-text u-text-default u-text-5">The foot location was determined by a gait system in a GaitMovement Compoenent, made in BP. This sould move scene componentes related to each foot, whose location would be passed into the animation BP to update the feet location. The results are seen in the video up top.</p>
+                  <p class="u-align-left u-text u-text-default u-text-6">From this Project I was able to learn valuable understinag of the Unreal Engine, including how modules are created and how C++ integrates well with other parts.</p>
                 </div>
               </div>
               <div class="u-container-style u-layout-cell u-right-cell u-size-30 u-size-xs-60 u-layout-cell-2" src="">
                 <div class="u-container-layout u-valign-bottom u-container-layout-2" src="">
                   <img class="u-image u-image-default u-image-1" src="../images/devenv_nvrj613W5Y.png" alt="" data-image-width="1265" data-image-height="609">
-                  <p class="u-align-center u-small-text u-text u-text-default u-text-variant u-text-7">An example of the FAnimNode_SkeletalControlBase function. It's important to override all necessary parent classes</p>
-                  <p class="u-align-center u-small-text u-text u-text-default u-text-variant u-text-8">This is the overview of the GaitMovement component's functions and properties. It has functions which determine a gait cycle as well as when to transition gaits</p>
+                  <p class="u-align-center u-small-text u-text u-text-default u-text-variant u-text-7">An example of the FAnimNode_SkeletalControlBase function. It's important to implement all necessary parent classes before the solver implementation.</p>
+                  <p class="u-align-center u-small-text u-text u-text-default u-text-variant u-text-8">This is the Overview of the Gait Components' functions and properties. It has functions which determine a gait cycle as well as when to transition gaits</p>
                   <img class="u-align-left u-image u-image-default u-image-2" src="../images/UE4Editor_M3xCQRz3h0.png" alt="" data-image-width="541" data-image-height="771">
                 </div>
               </div>
@@ -250,5 +250,16 @@
           </div>
         </div>
       </div></footer>
-  linecount=
-</body></html>linecount=
+    <section class="u-backlink u-clearfix u-grey-80">
+      <a class="u-link" href="https://nicepage.com/html-templates" target="_blank">
+        <span>HTML Templates</span>
+      </a>
+      <p class="u-text">
+        <span>created with</span>
+      </p>
+      <a class="u-link" href="https://nicepage.com/html-website-builder" target="_blank">
+        <span>HTML Designer</span>
+      </a>. 
+    </section>
+  
+</body></html>
